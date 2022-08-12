@@ -9,7 +9,7 @@ jobs:
     environment: development
     steps:
       - name: Deploy to the Dev environment
-      - uses: yaminiu/composite-actions@main
+        uses: yaminiu/composite-actions@main
         with:
           PYTHON_VERSION: 3.9
 
@@ -19,6 +19,6 @@ jobs:
     needs: development
     steps:
       - name: Deploy to the production environment
-      - uses: yaminiu/composite-actions@main
+        uses: yaminiu/composite-actions@main
         with:
           PYTHON_VERSION: 3.9
